@@ -21,11 +21,11 @@ public class Principal {
 			pessoa2.nome = JOptionPane.showInputDialog("Digite o nome da 2ª pessoa");
 			pessoa2.nascimento = LocalDate.parse(JOptionPane.showInputDialog("Digite o aniversario desta pessoa"), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 			pessoa2.cpf = JOptionPane.showInputDialog("Digite o cpf");
-			if (pessoa1.nascimento.isAfter(pessoa2.nascimento))
-				JOptionPane.showMessageDialog(null, pessoa2.nome + " é mais velho(a), com "
+			if (pessoa1.nascimento.isBefore(pessoa2.nascimento))
+				JOptionPane.showMessageDialog(null, pessoa2.nome + " é mais novo(a), com "
 						+ pessoa2.nascimento.until(LocalDate.now(), ChronoUnit.YEARS) + " Anos de idade e Cpf: " + pessoa2.cpf);
 			else
-				JOptionPane.showMessageDialog(null, pessoa1.nome + " é mais velho(a), com "
+				JOptionPane.showMessageDialog(null, pessoa1.nome + " é mais novo(a), com "
 						+ pessoa1.nascimento.until(LocalDate.now(), ChronoUnit.YEARS) + " Anos de idade");
 		
 
