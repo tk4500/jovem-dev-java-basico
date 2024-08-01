@@ -1,17 +1,17 @@
-package aula4.lambda.exercicio2;
+package aula4.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JOptionPane;
 
-public class Principal {
+public class Exercicio2 {
 
 	public static void main(String[] args) {
-		new Principal();
+		new Exercicio2();
 	}
 
-	public Principal() {
+	public Exercicio2() {
 		boolean done = false;
 		List<Aluno> aluno = new ArrayList<>();
 		for (int i = 0; i < 5; i++) {

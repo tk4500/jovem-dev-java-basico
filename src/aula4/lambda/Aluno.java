@@ -1,13 +1,13 @@
-package aula4.lambda.exercicio2;
+package aula4.lambda;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Aluno {
 
-	public int numeroChamada;
-	public String nome;
-	public LocalDate dataNascimento;
+	int numeroChamada;
+	String nome;
+	LocalDate dataNascimento;
 
 	public Aluno(String nome, int numeroChamada, String dataNascimento) {
 		this.nome = nome;

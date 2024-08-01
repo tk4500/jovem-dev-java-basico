@@ -3,8 +3,6 @@ package aula4.lambda;
 import java.util.ArrayList;
 import java.util.List;
 
-import aula4.lambda.exercicio2.Aluno;
-
 public class Exercicio3 {
 
 	public static void main(String[] args) {
