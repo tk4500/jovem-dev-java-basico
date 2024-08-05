@@ -17,7 +17,7 @@ public class Exercicio4 {
 		LocalDate[] dataNascimento = {LocalDate.parse("2006-04-30"),LocalDate.parse("2007-03-15"),LocalDate.parse("2005-04-21"),LocalDate.parse("2006-06-11"),LocalDate.parse("2003-03-15"),LocalDate.parse("2007-04-30"),LocalDate.parse("1689-02-21"),LocalDate.parse("1687-08-10"),LocalDate.parse("1975-12-19"),LocalDate.parse("2015-10-01"),};
 		for(int i=0;i<10;i++) 
 			pessoas.add(new Pessoa(nome[i],telefone[i],dataNascimento[i]));
-		System.out.println(pessoas.stream().filter(p->p.dataNascimento.getMonthValue() == 4).map(Pessoa::getNome).sorted().collect(Collectors.joining(", ")));
+		System.out.println(pessoas.stream().filter(p->p.dataNascimento.getMonthValue() == 5).map(Pessoa::getNome).sorted().collect(Collectors.joining(", ")));
 		
 	}
 
