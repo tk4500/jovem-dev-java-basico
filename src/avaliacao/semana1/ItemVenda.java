@@ -21,8 +21,7 @@ public class ItemVenda {
 		String msg = front + back;
 		if ((msg).length() < 32) 
 			return stringParse((front + "."), back);
-		else 
-		return msg + "\n";
+		return msg + "\n"; 
 	}
 	
 	public double calculaTotal() {
