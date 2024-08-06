@@ -40,14 +40,11 @@ public class Venda {
 	}
 
 	public boolean desconto() {
-		if (this.cliente.aniversario()) {
+		if (this.cliente.aniversario()) 
 			return true;
-		} else if (this.cliente.premium()) {
+		if (this.cliente.premium()) 
 			return true;
-		} else if (this.cliente.terceiraIdade()) {
-			return true;
-		}
-		return false;
+		return (this.cliente.terceiraIdade()); 
 
 	}
 
