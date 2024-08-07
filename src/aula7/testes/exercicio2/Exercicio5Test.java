@@ -1,4 +1,4 @@
-package aula5.stream;
+package aula7.testes.exercicio2;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -23,7 +23,7 @@ class Exercicio5Test {
 	@DisplayName("Se a lista estiver vazia, deve disparar ZeroBertoException")
 	@Test
 	void deveDispararExcessaoSeListaVazia() {
-		assertThrows(ZeroBertoException.class, ()-> exercicio.getBerto(nomes) );
+		assertThrows(ZeroBertoException.class, ()-> exercicio.getNomesBerto(nomes) );
 	}
 	@DisplayName("Se a lista tiver um null e tiver um berto depois, ler o primeiro berto")
 	@Test
@@ -32,7 +32,7 @@ class Exercicio5Test {
 		nomes.add("Alberto");
 		nomes.add("Adalberto");
 		
-		String retorno = exercicio.getBerto(nomes);
+		String retorno = exercicio.getNomesBerto(nomes);
 		
 		assertEquals("Alberto", retorno);
 	}
@@ -42,7 +42,7 @@ class Exercicio5Test {
 		nomes.add("João");
 		nomes.add("Pedro");
 		nomes.add("Adalberto");
-		String retorno = exercicio.getBerto(nomes);
+		String retorno = exercicio.getNomesBerto(nomes);
 		assertEquals("Adalberto", retorno);
 	}
 

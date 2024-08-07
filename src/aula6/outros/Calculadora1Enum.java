@@ -42,7 +42,6 @@ public enum Calculadora1Enum implements CalculoInterface{
 
 	@Override
 	public int calcula(int a, int b) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 }

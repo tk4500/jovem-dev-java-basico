@@ -1,4 +1,4 @@
-package aula5.stream;
+package aula7.testes.exercicio1;
 
 import java.time.LocalDate;
 
@@ -15,10 +15,4 @@ public class Pessoa {
 	public String getNome() {
 		return this.nome;
 	}
-public LocalDate getDataNascimento() {
-	return dataNascimento;
-}
-public String getTelefone() {
-	return telefone;
-}
 }
