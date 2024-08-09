@@ -21,14 +21,13 @@ public abstract class Personagem {
 				System.out.println(this.atacar(inimigo));
 
 				try {
-					System.out.println(inimigo.atacar(this));
-					System.out.println();
+					System.out.println(inimigo.atacar(this) + "\n");
 				} catch (PersonagemDerrotadoException e) {
-					System.out.println(e.getLocalizedMessage());
+					System.out.println(e.getLocalizedMessage() + "\n");
 					winner = 2;
 				}
 			} catch (PersonagemDerrotadoException e) {
-				System.out.println(e.getLocalizedMessage());
+				System.out.println(e.getLocalizedMessage() + "\n");
 				winner = 1;
 			}
 		} while (winner == 0);

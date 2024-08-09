@@ -26,7 +26,7 @@ public class Principal {
 			msg.append(h.getNome() + ": " + tempmsg + "\n");
 			System.out.println(tempmsg);
 		}
-		System.out.println("Situação final:\n" + msg.toString());
+		System.out.println("\n\nSituação final:\n" + msg.toString());
 	}
 
 	public static String resultadoBatalha(Personagem desafiante) {
